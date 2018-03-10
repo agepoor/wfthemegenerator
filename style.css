@@ -1,18 +1,9 @@
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-:root {
-  color: rgb(11, 184, 69) !important;
-  font-size: 16px !important;
-  font-size: 1rem !important;
-}
+/* Variables */
+
 /* Header and Navigation */
+
 /* 1. Set flexbox, remove Workflowy logo, and set order */
+
 #header {
   -webkit-box-sizing: border-box !important;
           box-sizing: border-box !important;
@@ -23,47 +14,62 @@ html {
       -ms-flex-align: center !important;
           align-items: center !important
 }
+
 #header #logo {
   -webkit-box-ordinal-group: 0 !important;
       -ms-flex-order: -1 !important;
           order: -1 !important;
   display: none !important;
 }
+
 #header #searchform {
   -webkit-box-ordinal-group: 1 !important;
       -ms-flex-order: 0 !important;
           order: 0 !important;
 }
+
 #header #savedViewHUDButton {
   -webkit-box-ordinal-group: 2 !important;
       -ms-flex-order: 1 !important;
           order: 1 !important;
+  margin-right: auto !important;
+  padding: 0 !important;
 }
-#header .redo-button {
+
+#header .redo-button,
+  #header .undo-button {
   -webkit-box-ordinal-group: 3 !important;
       -ms-flex-order: 2 !important;
           order: 2 !important;
+  margin: 0 !important;
 }
+
 #header .button,
   #header #helpButton {
   -webkit-box-ordinal-group: 4 !important;
       -ms-flex-order: 3 !important;
           order: 3 !important;
+  margin-left: 0.5em !important;
+  padding: 0.5em !important;
 }
+
 #header #buttonBar {
   -webkit-box-ordinal-group: 5 !important;
       -ms-flex-order: 4 !important;
           order: 4 !important;
 }
+
 /* 2. Remove default borders and backgrounds from navigation items */
-#header,
+
 .button,
 #helpButton,
 #buttonBar {
   background: none !important;
   border: none !important;
 }
+
 /* Remove default margins and paddings from navigation items */
+
 .redo-button,
 .undo-button,
 #helpButton,
@@ -73,12 +79,140 @@ html {
   top: 0 !important;
   bottom: 0 !important;
 }
-h1 {color: red !important;}
+
+#header {
+  padding: 1.5em 0.75em !important;
+}
+
+.menu-icon {
+  width: 100% !important;
+  height: 100% !important;
+  background: none !important;
+}
+
+.menu-icon:after {
+  content: "Menu" !important;
+}
+
 /* Page */
+
 #documentView {
   font-family: "Roboto", sans-serif !important;
   font-size: 12pt !important;
   font-weight: 400 !important;
 }
+
+body::-webkit-scrollbar {
+  width: 10px !important;
+  height: 2px !important;
+}
+
+body::-webkit-scrollbar-button {
+  width: 0px !important;
+  height: 0px !important;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #e1e1e1 !important;
+  border: 0px none #ffffff !important;
+  /*border-radius: 50px;*/
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #ffffff !important;
+}
+
+body::-webkit-scrollbar-thumb:active {
+  background: #000000 !important;
+}
+
+body::-webkit-scrollbar-track {
+  background: #666666 !important;
+  border: 0px none #ffffff !important;
+  /*border-radius: 50px;*/
+}
+
+body::-webkit-scrollbar-track:hover {
+  background: #666666 !important;
+}
+
+body::-webkit-scrollbar-track:active {
+  background: #ffffff !important;
+}
+
+body::-webkit-scrollbar-corner {
+  background: transparent !important;
+}
+
 /* Icons */
+
 /* Styled Tags */
+
+/* Colored Tags. Place your own in the title. */
+
+.content .contentMatch {
+  background-color: transparent !important;
+}
+
+[title~="@today"] {
+  background-color: #F67280 !important;
+  color: #ffffff !important;
+  padding: 2px 3px 2px !important;
+
+}
+
+[title~="@dump"] {
+  background-color: #a463f2 !important;
+  color: #ffffff !important;
+  padding: 2px 3px 2px !important;
+
+}
+
+[title~="@planning"] {
+  background-color: #137752 !important;
+  color: #ffffff !important;
+  padding: 2px 3px 2px !important;
+  text-decoration: none !important;
+}
+
+[title~="@habits"] {
+  background-color: darkcyan !important;
+  color: #ffffff !important;
+  padding: 2px 3px 2px !important;
+}
+
+[title~="@articles"] {
+  background-color: #d665e0 !important;
+  color: #ffffff !important;
+  padding: 2px 3px 2px !important;
+}
+
+[title~="@send"] {
+  background-color: #FFB700 !important;
+  color: #ffffff !important;
+  padding: 2px 3px 2px !important;
+}
+
+[title~="@note"] {
+  background-color: darkkhaki !important;
+  color: #ffffff !important;
+  padding: 2px 3px 2px !important;
+}
+
+[title~="@projects"] {
+  background-color: Chocolate !important;
+  color: #ffffff !important;
+  padding: 2px 3px 2px !important;
+}
+
+[title*="@pr-"] {
+  background-color: #FBF1A9 !important;
+  color: DarkSlateGray !important;
+  padding: 2px 3px 2px !important;
+}
+
+[title*="@rt-"] {
+  background-color: #FFDFDF !important;
+  color: DarkSlateGray !important;
+  padding: 2px 3px 2px !important;
+}

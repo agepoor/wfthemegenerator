@@ -1,4 +1,4 @@
-@import 'reset.css';
+/* Variables */
 @import 'variables.css';
 
 /* Header and Navigation */
@@ -7,7 +7,9 @@
 
 /* Page */
 @import 'page/page.css';
+@import 'page/scrollbar.css';
 
 /* Icons */
 
 /* Styled Tags */
+@import 'tags/colored-tags.css';

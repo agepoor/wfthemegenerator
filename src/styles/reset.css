@@ -1,6 +1,0 @@
-html {
-  box-sizing: border-box; /* no !important */
-}
-*, *:before, *:after {
-  box-sizing: inherit; /* no !important */
-}

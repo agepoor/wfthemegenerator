@@ -13,13 +13,20 @@
   }
   & #savedViewHUDButton {
     order: 1;
+    margin-right: auto;
+	  padding: 0;
   }
-  & .redo-button {
+  & .redo-button,
+  & .undo-button {
     order: 2;
+    margin: 0;
+
   }
   & .button,
   & #helpButton {
     order: 3;
+    margin-left: 0.5em;
+    padding: 0.5em;
   }
   & #buttonBar {
     order: 4;
@@ -28,7 +35,6 @@
 
 /* 2. Remove default borders and backgrounds from navigation items */
 
-#header,
 .button,
 #helpButton,
 #buttonBar {

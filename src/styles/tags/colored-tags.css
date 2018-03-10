@@ -1,0 +1,58 @@
+/* Colored Tags. Place your own in the title. */
+
+.content .contentMatch {
+  background-color: transparent;
+}
+[title~="@today"] {
+  background-color: #F67280 !important;
+  color: #ffffff !important;
+  padding: 2px 3px 2px !important;
+
+}
+[title~="@dump"] {
+  background-color: #a463f2 !important;
+  color: #ffffff !important;
+  padding: 2px 3px 2px !important;
+
+}
+[title~="@planning"] {
+  background-color: #137752 !important;
+  color: #ffffff !important;
+  padding: 2px 3px 2px !important;
+  text-decoration: none;
+}
+[title~="@habits"] {
+  background-color: darkcyan !important;
+  color: #ffffff !important;
+  padding: 2px 3px 2px !important;
+}
+[title~="@articles"] {
+  background-color: #d665e0 !important;
+  color: #ffffff !important;
+  padding: 2px 3px 2px !important;
+}
+[title~="@send"] {
+  background-color: #FFB700 !important;
+  color: #ffffff !important;
+  padding: 2px 3px 2px !important;
+}
+[title~="@note"] {
+  background-color: darkkhaki !important;
+  color: #ffffff !important;
+  padding: 2px 3px 2px !important;
+}
+[title~="@projects"] {
+  background-color: Chocolate !important;
+  color: #ffffff !important;
+  padding: 2px 3px 2px !important;
+}
+[title*="@pr-"] {
+  background-color: #FBF1A9 !important;
+  color: DarkSlateGray !important;
+  padding: 2px 3px 2px !important;
+}
+[title*="@rt-"] {
+  background-color: #FFDFDF !important;
+  color: DarkSlateGray !important;
+  padding: 2px 3px 2px !important;
+}
