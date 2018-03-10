@@ -1,32 +1,33 @@
-/* Set flexbox, remove Workflowy logo, and set order */
+/* 1. Set flexbox, remove Workflowy logo, and set order */
+
 #header {
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  #logo {
+  & #logo {
     order: -1;
     display: none;
   }
-  #searchform {
+  & #searchform {
     order: 0;
   }
-  #savedViewHUDButton {
+  & #savedViewHUDButton {
     order: 1;
   }
-  .redo-button,
-  .undo-button {
+  & .redo-button {
     order: 2;
   }
-  .button,
-  #helpButton {
+  & .button,
+  & #helpButton {
     order: 3;
   }
-  #buttonBar {
+  & #buttonBar {
     order: 4;
   }
 }
 
-/* Remove default borders and backgrounds from navigation items */
+/* 2. Remove default borders and backgrounds from navigation items */
+
 #header,
 .button,
 #helpButton,
@@ -36,10 +37,11 @@
 }
 
 /* Remove default margins and paddings from navigation items */
+
 .redo-button,
 .undo-button,
 #helpButton,
-button,
+.button,
 #logo,
 #searchForm {
   top: 0;

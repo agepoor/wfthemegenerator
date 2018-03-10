@@ -1,0 +1,84 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+:root {
+  color: rgb(11, 184, 69) !important;
+  font-size: 16px !important;
+  font-size: 1rem !important;
+}
+/* Header and Navigation */
+/* 1. Set flexbox, remove Workflowy logo, and set order */
+#header {
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important
+}
+#header #logo {
+  -webkit-box-ordinal-group: 0 !important;
+      -ms-flex-order: -1 !important;
+          order: -1 !important;
+  display: none !important;
+}
+#header #searchform {
+  -webkit-box-ordinal-group: 1 !important;
+      -ms-flex-order: 0 !important;
+          order: 0 !important;
+}
+#header #savedViewHUDButton {
+  -webkit-box-ordinal-group: 2 !important;
+      -ms-flex-order: 1 !important;
+          order: 1 !important;
+}
+#header .redo-button {
+  -webkit-box-ordinal-group: 3 !important;
+      -ms-flex-order: 2 !important;
+          order: 2 !important;
+}
+#header .button,
+  #header #helpButton {
+  -webkit-box-ordinal-group: 4 !important;
+      -ms-flex-order: 3 !important;
+          order: 3 !important;
+}
+#header #buttonBar {
+  -webkit-box-ordinal-group: 5 !important;
+      -ms-flex-order: 4 !important;
+          order: 4 !important;
+}
+/* 2. Remove default borders and backgrounds from navigation items */
+#header,
+.button,
+#helpButton,
+#buttonBar {
+  background: none !important;
+  border: none !important;
+}
+/* Remove default margins and paddings from navigation items */
+.redo-button,
+.undo-button,
+#helpButton,
+.button,
+#logo,
+#searchForm {
+  top: 0 !important;
+  bottom: 0 !important;
+}
+h1 {color: red !important;}
+/* Page */
+#documentView {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 12pt !important;
+  font-weight: 400 !important;
+}
+/* Icons */
+/* Styled Tags */

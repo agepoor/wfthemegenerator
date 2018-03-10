@@ -1,0 +1,70 @@
+html {
+  box-sizing: border-box;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+:root {
+  color: #0bb845 !important;
+  font-size: 16px !important;
+  font-size: 1rem !important;
+}
+#header {
+  box-sizing: border-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+#header #logo {
+  -ms-flex-order: -1 !important;
+  order: -1 !important;
+  display: none !important;
+}
+#header #searchform {
+  -ms-flex-order: 0 !important;
+  order: 0 !important;
+}
+#header #savedViewHUDButton {
+  -ms-flex-order: 1 !important;
+  order: 1 !important;
+}
+#header .redo-button {
+  -ms-flex-order: 2 !important;
+  order: 2 !important;
+}
+#header #helpButton,
+#header .button {
+  -ms-flex-order: 3 !important;
+  order: 3 !important;
+}
+#header #buttonBar {
+  -ms-flex-order: 4 !important;
+  order: 4 !important;
+}
+#buttonBar,
+#header,
+#helpButton,
+.button {
+  background: none !important;
+  border: none !important;
+}
+#helpButton,
+#logo,
+#searchForm,
+.button,
+.redo-button,
+.undo-button {
+  top: 0 !important;
+  bottom: 0 !important;
+}
+h1 {
+  color: red !important;
+}
+#documentView {
+  font-family: Roboto, sans-serif !important;
+  font-size: 12pt !important;
+  font-weight: 400 !important;
+}

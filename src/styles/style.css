@@ -1,5 +1,13 @@
-/* Import variables */
-@import "variables.css";
+@import 'reset.css';
+@import 'variables.css';
 
-/* Import components */
-@import "header/reset.css";
+/* Header and Navigation */
+@import 'header/bar-reset.css';
+@import 'header/bar.css';
+
+/* Page */
+@import 'page/page.css';
+
+/* Icons */
+
+/* Styled Tags */
