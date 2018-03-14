@@ -25,11 +25,12 @@
   & .button,
   & #helpButton {
     order: 3;
-    margin-left: 0.5em;
-    padding: 0.5em;
+    margin-left: 0.5rem;
+    padding: 0.5rem;
   }
   & #buttonBar {
     order: 4;
+    margin: 0;
   }
 }
 

@@ -1,58 +1,52 @@
-/* Colored Tags. Place your own in the title. */
+/* List of colors */
+$planning-color: var(--orange);
+$today-color: var(--red);
+$dump-color: var(--grape);
+$habits-color: var(--lime);
+$article-color: var(--yellow);
+$send-color: var(--orange);
+$note-color: var(--indigo);
+$projects-color: var(--blue);
+$pr-color: var(--teal);
+$rt-color: var(--cyan);
 
-.content .contentMatch {
-  background-color: transparent;
+@mixin tag-style($bgcolor) {
+  font-size: .875rem;
+  background-color: $bgcolor;
+  color: var(--tag-color);
+  padding: var(--tag-padding);
+  &:hover {
+    background-color: color-mod($bgcolor a(75%));
+  }
+}
+
+[title~="@planning"] {
+  @include tag-style($planning-color);
 }
 [title~="@today"] {
-  background-color: #F67280 !important;
-  color: #ffffff !important;
-  padding: 2px 3px 2px !important;
-
+  @include tag-style($today-color);
 }
 [title~="@dump"] {
-  background-color: #a463f2 !important;
-  color: #ffffff !important;
-  padding: 2px 3px 2px !important;
-
-}
-[title~="@planning"] {
-  background-color: #137752 !important;
-  color: #ffffff !important;
-  padding: 2px 3px 2px !important;
-  text-decoration: none;
+  @include tag-style($dump-color);
 }
 [title~="@habits"] {
-  background-color: darkcyan !important;
-  color: #ffffff !important;
-  padding: 2px 3px 2px !important;
+  @include tag-style($habits-color);
 }
-[title~="@articles"] {
-  background-color: #d665e0 !important;
-  color: #ffffff !important;
-  padding: 2px 3px 2px !important;
+[title~="@article"] {
+  @include tag-style($article-color);
 }
 [title~="@send"] {
-  background-color: #FFB700 !important;
-  color: #ffffff !important;
-  padding: 2px 3px 2px !important;
+  @include tag-style($send-color);
 }
 [title~="@note"] {
-  background-color: darkkhaki !important;
-  color: #ffffff !important;
-  padding: 2px 3px 2px !important;
+  @include tag-style($note-color);
 }
 [title~="@projects"] {
-  background-color: Chocolate !important;
-  color: #ffffff !important;
-  padding: 2px 3px 2px !important;
+  @include tag-style($projects-color);
 }
 [title*="@pr-"] {
-  background-color: #FBF1A9 !important;
-  color: DarkSlateGray !important;
-  padding: 2px 3px 2px !important;
+  @include tag-style($pr-color);
 }
 [title*="@rt-"] {
-  background-color: #FFDFDF !important;
-  color: DarkSlateGray !important;
-  padding: 2px 3px 2px !important;
+  @include tag-style($rt-color);
 }

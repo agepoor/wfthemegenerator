@@ -1,5 +1,14 @@
+*body {
+  background: var(--page-bg-color);
+}
 #documentView {
-  font-family: "Roboto", sans-serif;
-  font-size: 12pt;
-  font-weight: 400;
+  background: var(--page-bg-color);
+  font-family: var(--primary-font);
+}
+#pageContainer {
+  background: var(--page-bg-color);
+  margin-top: calc(2 * var(--header-padding));
+}
+.page {
+  border: 1px solid #eaecef;
 }

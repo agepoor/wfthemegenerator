@@ -1,0 +1,23 @@
+@import './../../node_modules/open-color/open-color.css';
+:root {
+  /* Header */
+  --header-padding: 1.5rem;
+  /* Page Styles */
+  --page-bg-color: rgb(250, 250, 250);
+  --primary-font: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* Tag-related Styles */
+  --tag-color: #fff;
+  --tag-padding: 0.025rem 0.250rem 0.075rem;
+  --red: var(--oc-red-8);
+  --pink: var(--oc-pink-8);
+  --grape: var(--oc-grape-8);
+  --violet: var(--oc-violet-8);
+  --indigo: var(--oc-indigo-8);
+  --blue: var(--oc-blue-8);
+  --cyan: var(--oc-cyan-8);
+  --teal: var(--oc-teal-8);
+  --green: var(--oc-green-8);
+  --lime: var(--oc-lime-8);
+  --yellow: var(--oc-yellow-8);
+  --orange: var(--oc-orange-8);
+}

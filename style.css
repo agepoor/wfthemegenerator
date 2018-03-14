@@ -1,9 +1,75 @@
-/* Variables */
+/* Import colors and variables*/
+/*
+ *
+ *  𝗖 𝗢 𝗟 𝗢 𝗥
+ *  v 1.6.2
+ *
+ *  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
 
+/*  General
+ *  ─────────────────────────────────── */
+
+
+/*  Gray
+ *  ─────────────────────────────────── */
+
+
+/*  Red
+ *  ─────────────────────────────────── */
+
+
+/*  Pink
+ *  ─────────────────────────────────── */
+
+
+/*  Grape
+ *  ─────────────────────────────────── */
+
+
+/*  Violet
+ *  ─────────────────────────────────── */
+
+
+/*  Indigo
+ *  ─────────────────────────────────── */
+
+
+/*  Blue
+ *  ─────────────────────────────────── */
+
+
+/*  Cyan
+ *  ─────────────────────────────────── */
+
+
+/*  Teal
+ *  ─────────────────────────────────── */
+
+
+/*  Green
+ *  ─────────────────────────────────── */
+
+
+/*  Lime
+ *  ─────────────────────────────────── */
+
+
+/*  Yellow
+ *  ─────────────────────────────────── */
+
+
+/*  Orange
+ *  ─────────────────────────────────── */
+
+}
+:root {
+  /* Header */
+  /* Page Styles */
+  /* Tag-related Styles */
+}
 /* Header and Navigation */
-
 /* 1. Set flexbox, remove Workflowy logo, and set order */
-
 #header {
   -webkit-box-sizing: border-box !important;
           box-sizing: border-box !important;
@@ -14,62 +80,61 @@
       -ms-flex-align: center !important;
           align-items: center !important
 }
-
 #header #logo {
-  -webkit-box-ordinal-group: 0 !important;
-      -ms-flex-order: -1 !important;
-          order: -1 !important;
-  display: none !important;
-}
+-webkit-box-ordinal-group: 0 !important;
+    -ms-flex-order: -1 !important;
+        order: -1 !important;
+display: none !important;
 
+}
 #header #searchform {
-  -webkit-box-ordinal-group: 1 !important;
-      -ms-flex-order: 0 !important;
-          order: 0 !important;
-}
+-webkit-box-ordinal-group: 1 !important;
+    -ms-flex-order: 0 !important;
+        order: 0 !important;
 
+}
 #header #savedViewHUDButton {
-  -webkit-box-ordinal-group: 2 !important;
-      -ms-flex-order: 1 !important;
-          order: 1 !important;
-  margin-right: auto !important;
-  padding: 0 !important;
-}
+-webkit-box-ordinal-group: 2 !important;
+    -ms-flex-order: 1 !important;
+        order: 1 !important;
+margin-right: auto !important;
+padding: 0 !important;
 
+}
 #header .redo-button,
   #header .undo-button {
-  -webkit-box-ordinal-group: 3 !important;
-      -ms-flex-order: 2 !important;
-          order: 2 !important;
-  margin: 0 !important;
-}
+-webkit-box-ordinal-group: 3 !important;
+    -ms-flex-order: 2 !important;
+        order: 2 !important;
+margin: 0 !important;
 
+}
 #header .button,
   #header #helpButton {
-  -webkit-box-ordinal-group: 4 !important;
-      -ms-flex-order: 3 !important;
-          order: 3 !important;
-  margin-left: 0.5em !important;
-  padding: 0.5em !important;
-}
+-webkit-box-ordinal-group: 4 !important;
+    -ms-flex-order: 3 !important;
+        order: 3 !important;
+margin-left: 8px !important;
+margin-left: 0.5rem !important;
+padding: 8px !important;
+padding: 0.5rem !important;
 
+}
 #header #buttonBar {
-  -webkit-box-ordinal-group: 5 !important;
-      -ms-flex-order: 4 !important;
-          order: 4 !important;
+-webkit-box-ordinal-group: 5 !important;
+    -ms-flex-order: 4 !important;
+        order: 4 !important;
+margin: 0 !important;
+
 }
-
 /* 2. Remove default borders and backgrounds from navigation items */
-
 .button,
 #helpButton,
 #buttonBar {
   background: none !important;
   border: none !important;
 }
-
 /* Remove default margins and paddings from navigation items */
-
 .redo-button,
 .undo-button,
 #helpButton,
@@ -79,140 +144,176 @@
   top: 0 !important;
   bottom: 0 !important;
 }
-
 #header {
-  padding: 1.5em 0.75em !important;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2) !important;
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2) !important;
+  padding: 24px !important;
+  padding: 1.5rem !important;
 }
-
 .menu-icon {
   width: 100% !important;
   height: 100% !important;
   background: none !important;
 }
-
 .menu-icon:after {
   content: "Menu" !important;
 }
-
 /* Page */
-
-#documentView {
-  font-family: "Roboto", sans-serif !important;
-  font-size: 12pt !important;
-  font-weight: 400 !important;
+*body {
+  background: rgb(250, 250, 250) !important;
 }
-
+#documentView {
+  background: rgb(250, 250, 250) !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+}
+#pageContainer {
+  background: rgb(250, 250, 250) !important;
+  margin-top: 48px !important;
+  margin-top: 3rem !important;
+}
+.page {
+  border: 1px solid #eaecef !important;
+}
 body::-webkit-scrollbar {
   width: 10px !important;
   height: 2px !important;
 }
-
 body::-webkit-scrollbar-button {
   width: 0px !important;
   height: 0px !important;
 }
-
 body::-webkit-scrollbar-thumb {
   background: #e1e1e1 !important;
   border: 0px none #ffffff !important;
   /*border-radius: 50px;*/
 }
-
 body::-webkit-scrollbar-thumb:hover {
   background: #ffffff !important;
 }
-
 body::-webkit-scrollbar-thumb:active {
   background: #000000 !important;
 }
-
 body::-webkit-scrollbar-track {
   background: #666666 !important;
   border: 0px none #ffffff !important;
   /*border-radius: 50px;*/
 }
-
 body::-webkit-scrollbar-track:hover {
   background: #666666 !important;
 }
-
 body::-webkit-scrollbar-track:active {
   background: #ffffff !important;
 }
-
 body::-webkit-scrollbar-corner {
   background: transparent !important;
 }
-
 /* Icons */
-
 /* Styled Tags */
-
-/* Colored Tags. Place your own in the title. */
-
-.content .contentMatch {
-  background-color: transparent !important;
-}
-
-[title~="@today"] {
-  background-color: #F67280 !important;
-  color: #ffffff !important;
-  padding: 2px 3px 2px !important;
-
-}
-
-[title~="@dump"] {
-  background-color: #a463f2 !important;
-  color: #ffffff !important;
-  padding: 2px 3px 2px !important;
-
-}
-
-[title~="@planning"] {
-  background-color: #137752 !important;
-  color: #ffffff !important;
-  padding: 2px 3px 2px !important;
+.contentTagText {
   text-decoration: none !important;
 }
+.contentMatch {
+  background: none !important;
+  text-shadow: -1px -1px 1px #FFF !important;
+}
+/* List of colors */
+[title~="@planning"] {
+  font-size: .875rem !important;
+  background-color: #e8590c !important;
+  color: #fff !important;
+  padding: 0.025rem 0.250rem 0.075rem !important;
+}
+[title~="@planning"]:hover {
+background-color: rgba(232, 89, 12, 0.75) !important;
 
+}
+[title~="@today"] {
+  font-size: .875rem !important;
+  background-color: #e03131 !important;
+  color: #fff !important;
+  padding: 0.025rem 0.250rem 0.075rem !important;
+}
+[title~="@today"]:hover {
+background-color: rgba(224, 49, 49, 0.75) !important;
+
+}
+[title~="@dump"] {
+  font-size: .875rem !important;
+  background-color: #9c36b5 !important;
+  color: #fff !important;
+  padding: 0.025rem 0.250rem 0.075rem !important;
+}
+[title~="@dump"]:hover {
+background-color: rgba(156, 54, 181, 0.75) !important;
+
+}
 [title~="@habits"] {
-  background-color: darkcyan !important;
-  color: #ffffff !important;
-  padding: 2px 3px 2px !important;
+  font-size: .875rem !important;
+  background-color: #66a80f !important;
+  color: #fff !important;
+  padding: 0.025rem 0.250rem 0.075rem !important;
 }
+[title~="@habits"]:hover {
+background-color: rgba(102, 168, 15, 0.75) !important;
 
-[title~="@articles"] {
-  background-color: #d665e0 !important;
-  color: #ffffff !important;
-  padding: 2px 3px 2px !important;
 }
+[title~="@article"] {
+  font-size: .875rem !important;
+  background-color: #f08c00 !important;
+  color: #fff !important;
+  padding: 0.025rem 0.250rem 0.075rem !important;
+}
+[title~="@article"]:hover {
+background-color: rgba(240, 140, 0, 0.75) !important;
 
+}
 [title~="@send"] {
-  background-color: #FFB700 !important;
-  color: #ffffff !important;
-  padding: 2px 3px 2px !important;
+  font-size: .875rem !important;
+  background-color: #e8590c !important;
+  color: #fff !important;
+  padding: 0.025rem 0.250rem 0.075rem !important;
 }
+[title~="@send"]:hover {
+background-color: rgba(232, 89, 12, 0.75) !important;
 
+}
 [title~="@note"] {
-  background-color: darkkhaki !important;
-  color: #ffffff !important;
-  padding: 2px 3px 2px !important;
+  font-size: .875rem !important;
+  background-color: #3b5bdb !important;
+  color: #fff !important;
+  padding: 0.025rem 0.250rem 0.075rem !important;
 }
+[title~="@note"]:hover {
+background-color: rgba(59, 91, 219, 0.75) !important;
 
+}
 [title~="@projects"] {
-  background-color: Chocolate !important;
-  color: #ffffff !important;
-  padding: 2px 3px 2px !important;
+  font-size: .875rem !important;
+  background-color: #1971c2 !important;
+  color: #fff !important;
+  padding: 0.025rem 0.250rem 0.075rem !important;
 }
+[title~="@projects"]:hover {
+background-color: rgba(25, 113, 194, 0.75) !important;
 
+}
 [title*="@pr-"] {
-  background-color: #FBF1A9 !important;
-  color: DarkSlateGray !important;
-  padding: 2px 3px 2px !important;
+  font-size: .875rem !important;
+  background-color: #099268 !important;
+  color: #fff !important;
+  padding: 0.025rem 0.250rem 0.075rem !important;
 }
+[title*="@pr-"]:hover {
+background-color: rgba(9, 146, 104, 0.75) !important;
 
+}
 [title*="@rt-"] {
-  background-color: #FFDFDF !important;
-  color: DarkSlateGray !important;
-  padding: 2px 3px 2px !important;
+  font-size: .875rem !important;
+  background-color: #0c8599 !important;
+  color: #fff !important;
+  padding: 0.025rem 0.250rem 0.075rem !important;
+}
+[title*="@rt-"]:hover {
+background-color: rgba(12, 133, 153, 0.75) !important;
+
 }
