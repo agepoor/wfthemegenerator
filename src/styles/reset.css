@@ -1,5 +1,4 @@
-/* 1. Set flexbox, remove Workflowy logo, and set order */
-
+/* 1. Set flexbox and order */
 #header {
   box-sizing: border-box;
   display: flex;
@@ -53,4 +52,13 @@
 #searchForm {
   top: 0;
   bottom: 0;
+}
+
+/* Tags */
+.contentTagText {
+  text-decoration: none;
+}
+.contentMatch {
+  background: none;
+  text-shadow: -1px -1px 1px #FFF;
 }

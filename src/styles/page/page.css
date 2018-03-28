@@ -1,14 +1,13 @@
-*body {
-  background: var(--page-bg-color);
-}
 #documentView {
-  background: var(--page-bg-color);
-  font-family: var(--primary-font);
+  background-image: var(--bg-image);
+  /* font-family: var(--primary-font); */
 }
 #pageContainer {
-  background: var(--page-bg-color);
+  background: none;
   margin-top: calc(2 * var(--header-padding));
 }
 .page {
-  border: 1px solid #eaecef;
+  border: var(--page-border);
+  border-radius: var(--page-radius);
+  box-shadow: var(--page-box-shadow);
 }

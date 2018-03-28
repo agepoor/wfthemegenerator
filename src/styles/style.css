@@ -1,16 +1,11 @@
 /* Import colors and variables*/
 @import 'variables.css';
 
-/* Header and Navigation */
-@import 'header/bar-reset.css';
-@import 'header/bar.css';
+/* Reset */
+@import 'reset.css';
 
-/* Page */
+/* Styles */
+@import 'header/bar.css';
 @import 'page/page.css';
 @import 'page/scrollbar.css';
-
-/* Icons */
-
-/* Styled Tags */
-@import 'tags/tags-reset.css';
 @import 'tags/colored-tags.css';
