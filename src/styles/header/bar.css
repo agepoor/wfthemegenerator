@@ -10,3 +10,14 @@
 .menu-icon:after {
   content: "Menu";
 }
+.redo-button,
+.undo-button,
+#helpButton,
+.button,
+#logo,
+#searchForm {
+  color: color(var(--primary-color) blackness(50%));
+  & :hover {
+    color: var(--primary-color);
+  }
+}

@@ -9,6 +9,7 @@ $note-color: var(--indigo);
 $projects-color: var(--blue);
 $pr-color: var(--teal);
 $rt-color: var(--cyan);
+$hb-color: var(--violet);
 
 @mixin tag-style($bgcolor) {
   font-size: .875rem;
@@ -49,4 +50,7 @@ $rt-color: var(--cyan);
 }
 [title*="@rt-"] {
   @include tag-style($rt-color);
+}
+[title*="@hb-"] {
+  @include tag-style($hb-color);
 }

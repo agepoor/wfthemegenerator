@@ -75,6 +75,22 @@
 .menu-icon:after {
   content: "Menu" !important;
 }
+#helpButton,
+#logo,
+#searchForm,
+.button,
+.redo-button,
+.undo-button {
+  color: #aaa !important;
+}
+#helpButton :hover,
+#logo :hover,
+#searchForm :hover,
+.button :hover,
+.redo-button :hover,
+.undo-button :hover {
+  color: #fff !important;
+}
 #documentView {
   background-image: linear-gradient(180deg, #e6e9f0 0, #eef1f5) !important;
 }
@@ -208,4 +224,13 @@ body::-webkit-scrollbar-corner {
 }
 [title*="@rt-"]:hover {
   background-color: rgba(16, 152, 173, 0.75) !important;
+}
+[title*="@hb-"] {
+  font-size: 0.875rem !important;
+  background-color: #7048e8 !important;
+  color: #fff !important;
+  padding: 0.025rem 0.25rem 0.075rem !important;
+}
+[title*="@hb-"]:hover {
+  background-color: rgba(112, 72, 232, 0.75) !important;
 }

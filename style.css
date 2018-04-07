@@ -64,9 +64,10 @@
 
 }
 :root {
+  /* Theme Colors */
   /* Header */
+  /* --header-font-size: 1rem; */
   /* Page */
-  /* TODO: Font Sizes */
   /* Tags */
   /* Colors */
 }
@@ -168,6 +169,18 @@ margin: 0 !important;
 }
 .menu-icon:after {
   content: "Menu" !important;
+}
+.redo-button,
+.undo-button,
+#helpButton,
+.button,
+#logo,
+#searchForm {
+  color: rgb(170, 170, 170) !important
+}
+.redo-button :hover, .undo-button :hover, #helpButton :hover, .button :hover, #logo :hover, #searchForm :hover {
+color: #fff !important;
+
 }
 #documentView {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#e6e9f0), to(#eef1f5)) !important;
@@ -317,5 +330,15 @@ background-color: rgba(12, 166, 120, 0.75) !important;
 }
 [title*="@rt-"]:hover {
 background-color: rgba(16, 152, 173, 0.75) !important;
+
+}
+[title*="@hb-"] {
+  font-size: .875rem !important;
+  background-color: #7048e8 !important;
+  color: #fff !important;
+  padding: 0.025rem 0.250rem 0.075rem !important;
+}
+[title*="@hb-"]:hover {
+background-color: rgba(112, 72, 232, 0.75) !important;
 
 }
