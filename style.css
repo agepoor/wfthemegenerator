@@ -2,7 +2,7 @@
 /*
  *
  *  𝗖 𝗢 𝗟 𝗢 𝗥
- *  v 1.6.2
+ *  v 1.6.3
  *
  *  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 :root {
@@ -66,7 +66,6 @@
 :root {
   /* Theme Colors */
   /* Header */
-  /* --header-font-size: 1rem; */
   /* Page */
   /* Tags */
   /* Colors */
@@ -155,6 +154,10 @@ margin: 0 !important;
   background: none !important;
   text-shadow: -1px -1px 1px #FFF !important;
 }
+/* Remove share buttons and Go Pro link */
+.facebookLike, .twitter-follow-button, .proPitch, #proPitchBottomRight {
+  display: none !important;
+}
 /* Styles */
 #header {
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23) !important;
@@ -183,8 +186,8 @@ color: #fff !important;
 
 }
 #documentView {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e6e9f0), to(#eef1f5)) !important;
-  background-image: linear-gradient(to bottom, #e6e9f0 0%, #eef1f5 100%) !important;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dfe9f3), to(white)) !important;
+  background-image: linear-gradient(to bottom, #dfe9f3 0%, white 100%) !important;
   /* font-family: var(--primary-font); */
 }
 #pageContainer {
@@ -310,6 +313,16 @@ background-color: rgba(66, 99, 235, 0.75) !important;
 }
 [title~="@projects"]:hover {
 background-color: rgba(28, 126, 214, 0.75) !important;
+
+}
+[title~="@log"] {
+  font-size: .875rem !important;
+  background-color: #d6336c !important;
+  color: #fff !important;
+  padding: 0.025rem 0.250rem 0.075rem !important;
+}
+[title~="@log"]:hover {
+background-color: rgba(214, 51, 108, 0.75) !important;
 
 }
 [title*="@pr-"] {

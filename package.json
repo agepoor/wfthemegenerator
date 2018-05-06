@@ -11,7 +11,9 @@
     "build:css": "postcss ./src/styles/style.css -o ./style.css",
     "publish": "npm-run-all publish:css:**",
     "publish:css:minify": "postcss --no-map ./style.css -u cssnano -d ./dist",
-    "publish:css:prettify": "prettier ./dist/style.css --write"
+    "publish:css:prettify": "prettier ./dist/style.css --write",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "browserslist": [
     "> 1%",
@@ -30,6 +32,7 @@
     "postcss-import": "^11.1.0",
     "postcss-safe-important": "^1.1.0",
     "precss": "^3.1.2",
-    "prettier": "^1.11.1"
+    "prettier": "^1.11.1",
+    "vuepress": "^0.8.4"
   }
 }

@@ -2,11 +2,11 @@
 :root {
   /* Theme Colors */
   --primary-color: #fff;
-  /* Header */
+  /* Header and links */
   --header-padding: 1.5rem;
   --header-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  /* Page */
-  --bg-image: linear-gradient(to bottom, #e6e9f0 0%, #eef1f5 100%);
+  /* Background and page */
+  --bg-image: linear-gradient(to bottom, #dfe9f3 0%, white 100%);;
   --page-bg-color: #fff;
   --page-radius: 2px;
   --page-border: none;
