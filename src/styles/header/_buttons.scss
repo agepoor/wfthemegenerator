@@ -1,0 +1,6 @@
+.button, .button > div {
+  color: var(--primary-color);
+  &:hover {
+    color: var(--header-link-hover);
+  }
+}

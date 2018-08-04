@@ -1,17 +1,17 @@
 {
-  "name": "workflowy-theme-generator",
+  "name": "workflowy-theme-boilerplate",
   "version": "0.0.2",
   "description": "A Theme Generator For Workflowy",
   "scripts": {
-    "version": "auto-changelog -p && git add CHANGELOG.md",
-    "start": "run-p serve watch",
+    "start": "run-p watch",
     "serve": "browser-sync start --server --files \"style.css, index.html\"",
     "watch": "onchange \"src/styles/\" -- run-s build:** publish:**",
     "build": "npm-run-all build:**",
-    "build:css": "postcss ./src/styles/style.css -o ./style.css",
+    "build:scss": "node-sass ./src/styles/style.scss -o .",
     "publish": "npm-run-all publish:css:**",
-    "publish:css:minify": "postcss --no-map ./style.css -u cssnano -d ./dist",
+    "publish:css:minify": "postcss --no-map ./dist/style.css -u cssnano -d ./dist",
     "publish:css:prettify": "prettier ./dist/style.css --write",
+    "publish:css:postcss": "postcss ./style.css -o ./dist/style.css",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
@@ -20,19 +20,16 @@
     "last 2 versions"
   ],
   "devDependencies": {
-    "auto-changelog": "^1.4.5",
     "cssnano": "^3.10.0",
+    "node-sass": "^4.9.2",
     "npm-run-all": "^4.1.2",
     "onchange": "^3.3.0",
     "open-color": "^1.6.2",
     "postcss": "^6.0.19",
-    "postcss-at-rules-variables": "^0.1.4",
     "postcss-cli": "^5.0.0",
-    "postcss-cssnext": "^3.1.0",
-    "postcss-import": "^11.1.0",
+    "postcss-preset-env": "^5.2.1",
     "postcss-safe-important": "^1.1.0",
-    "precss": "^3.1.2",
     "prettier": "^1.11.1",
-    "vuepress": "^0.8.4"
+    "vuepress": "^0.11.0"
   }
 }

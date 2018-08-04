@@ -1,0 +1,47 @@
+
+@mixin tag-style($bgcolor) {
+  font-size: .875rem;
+  background-color: $bgcolor;
+  color: var(--tag-color);
+  padding: var(--tag-padding);
+  &:hover {
+    background-color: color-mod($bgcolor a(75%));
+  }
+}
+
+[title~="@planning"] {
+  @include tag-style($oc-orange-7);
+}
+[title~="@today"] {
+  @include tag-style($oc-red-7);
+}
+[title~="@dump"] {
+  @include tag-style($oc-grape-7);
+}
+[title~="@habits"] {
+  @include tag-style($oc-lime-7);
+}
+[title~="@article"] {
+  @include tag-style($oc-yellow-7);
+}
+[title~="@send"] {
+  @include tag-style($oc-orange-7);
+}
+[title~="@note"] {
+  @include tag-style($oc-indigo-7);
+}
+[title~="@projects"] {
+  @include tag-style($oc-blue-7);
+}
+[title~="@log"] {
+  @include tag-style($oc-pink-7);
+}
+[title*="@pr-"] {
+  @include tag-style($oc-teal-7);
+}
+[title*="@rt-"] {
+  @include tag-style($oc-cyan-7);
+}
+[title*="@hb-"] {
+  @include tag-style($oc-violet-7);
+}

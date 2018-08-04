@@ -1,251 +1,325 @@
+/* Variables and resets */
+:root {
+  /* Theme Colors */
+  --primary-color: rgba(255, 255, 255,1) !important;
+  --secondary-color: rgba(51, 7, 104, 1) !important;
+  /* Header and links */
+  --header-padding: 1.5rem !important;
+  --header-bg-color: rgba(51, 7, 104, 1) !important;
+  --header-bg-color: var(--secondary-color) !important;
+  --header-bg-color-search: hsla(267.21649484536084, 87.3873873874%, 75%, 0.25) !important;
+  --header-bg-color-search: hsla(267.21649484536084, 87.3873873874%, 75%, 0.25) !important;
+  --header-bg-box-shadow-color: rgba(51, 7, 104, 0.33) !important;
+  --header-bg-box-shadow-color: rgba(51, 7, 104, 0.33) !important;
+  --header-bg-box-shadow-search: 0px 0px 25px 0px rgba(51, 7, 104, 0.33) !important;
+  --header-bg-box-shadow-search: 0px 0px 25px 0px var(--header-bg-box-shadow-color) !important;
+  --header-link-hover: rgba(255, 255, 255, 0.5) !important;
+  --header-link-hover: rgba(255, 255, 255, 0.5) !important;
+  --header-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) !important;
+  /* Background and page */
+  --bg-image: linear-gradient(to bottom, #dfe9f3 0%, white 100%) !important;
+  --page-bg-color: #fff !important;
+  --page-radius: 2px !important;
+  --page-border: none !important;
+  --page-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24) !important;
+  /* Tags */
+  --tag-color: #fff !important;
+  --tag-padding: 0.025rem 0.250rem 0.075rem !important; }
+
+/* 1. Set flexbox and order */
 #header {
-  box-sizing: border-box !important;
+  background-image: none !important;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
-  -ms-flex-align: center !important;
-  align-items: center !important;
-}
-#header #logo {
-  -ms-flex-order: -1 !important;
-  order: -1 !important;
-  display: none !important;
-}
-#header #searchform {
-  -ms-flex-order: 0 !important;
-  order: 0 !important;
-}
-#header #savedViewHUDButton {
-  -ms-flex-order: 1 !important;
-  order: 1 !important;
-  margin-right: auto !important;
-  padding: 0 !important;
-}
-#header .redo-button,
-#header .undo-button {
-  -ms-flex-order: 2 !important;
-  order: 2 !important;
-  margin: 0 !important;
-}
-#header #helpButton,
-#header .button {
-  -ms-flex-order: 3 !important;
-  order: 3 !important;
-  margin-left: 8px !important;
-  margin-left: 0.5rem !important;
-  padding: 8px !important;
-  padding: 0.5rem !important;
-}
-#header #buttonBar {
-  -ms-flex-order: 4 !important;
-  order: 4 !important;
-  margin: 0 !important;
-}
-#buttonBar,
-#helpButton,
-.button {
-  background: none !important;
-  border: none !important;
-}
-#helpButton,
-#logo,
-#searchForm,
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important; }
+  #header #logo {
+    -webkit-box-ordinal-group: 0 !important;
+        -ms-flex-order: -1 !important;
+            order: -1 !important;
+    display: none !important; }
+  #header #searchform {
+    -webkit-box-ordinal-group: 1 !important;
+        -ms-flex-order: 0 !important;
+            order: 0 !important; }
+  #header #savedViewHUDButton {
+    -webkit-box-ordinal-group: 2 !important;
+        -ms-flex-order: 1 !important;
+            order: 1 !important;
+    margin-right: auto !important;
+    padding: 0 !important; }
+  #header .redo-button,
+  #header .undo-button {
+    -webkit-box-ordinal-group: 3 !important;
+        -ms-flex-order: 2 !important;
+            order: 2 !important;
+    margin: 0 !important; }
+  #header .button,
+  #header #helpButton {
+    -webkit-box-ordinal-group: 4 !important;
+        -ms-flex-order: 3 !important;
+            order: 3 !important;
+    margin-left: 0.5rem !important;
+    padding: 0.5rem !important; }
+  #header #buttonBar {
+    -webkit-box-ordinal-group: 5 !important;
+        -ms-flex-order: 4 !important;
+            order: 4 !important;
+    margin: 0 !important; }
+
+/* 2. Remove default borders and backgrounds from navigation items */
 .button,
+#helpButton,
+#buttonBar {
+  background: none !important;
+  border: none !important; }
+
+/* Remove default margins and paddings from navigation items */
 .redo-button,
-.undo-button {
+.undo-button,
+#helpButton,
+.button,
+#logo,
+#searchForm {
   top: 0 !important;
-  bottom: 0 !important;
-}
+  bottom: 0 !important; }
+
+/* Tags */
 .contentTagText {
-  text-decoration: none !important;
-}
+  text-decoration: none !important; }
+
 .contentMatch {
   background: none !important;
-  text-shadow: -1px -1px 1px #fff !important;
-}
-#proPitchBottomRight,
-.facebookLike,
-.proPitch,
-.twitter-follow-button {
-  display: none !important;
-}
+  text-shadow: -1px -1px 1px #FFF !important; }
+
+/* Change bottomlinks */
+.bottomLink {
+  font-style: normal !important; }
+
+/* Remove share buttons and Go Pro link */
+.facebookLike, .twitter-follow-button, .proPitch, #proPitchBottomRight {
+  display: none !important; }
+
+/* Workflowy components */
 #header {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
-  padding: 24px !important;
+  border: none !important;
+  background-color: #330867 !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(240)'%3E%3Cstop offset='0' stop-color='%23330867'/%3E%3Cstop offset='1' stop-color='%23258b82'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='540' height='450' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.1'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E") !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  background-position: center !important;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) !important;
+          box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) !important;
+  -webkit-box-shadow: var(--header-box-shadow) !important;
+          box-shadow: var(--header-box-shadow) !important;
   padding: 1.5rem !important;
-}
+  padding: var(--header-padding) !important; }
+
 .menu-icon {
   width: 100% !important;
   height: 100% !important;
-  background: none !important;
-}
+  background: none !important; }
+
 .menu-icon:after {
-  content: "Menu" !important;
-}
-#helpButton,
-#logo,
-#searchForm,
-.button,
-.redo-button,
-.undo-button {
-  color: #aaa !important;
-}
-#helpButton :hover,
-#logo :hover,
-#searchForm :hover,
-.button :hover,
-.redo-button :hover,
-.undo-button :hover {
-  color: #fff !important;
-}
+  content: "Menu" !important; }
+
+.button, .button > div {
+  color: rgba(255, 255, 255,1) !important;
+  color: var(--primary-color) !important; }
+  .button:hover, .button > div:hover {
+    color: rgba(255, 255, 255, 0.5) !important;
+    color: var(--header-link-hover) !important; }
+
+#searchForm > input {
+  border: none !important;
+  background: hsla(267.21649484536084, 87.3873873874%, 75%, 0.25) !important;
+  background: var(--header-bg-color-search) !important;
+  color: rgba(255, 255, 255,1) !important;
+  color: var(--primary-color) !important; }
+
+input#searchBox:focus {
+  color: rgba(255, 255, 255,1) !important;
+  color: var(--primary-color) !important;
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(51, 7, 104, 0.33) !important;
+          box-shadow: 0px 0px 25px 0px rgba(51, 7, 104, 0.33) !important;
+  -webkit-box-shadow: var(--header-bg-box-shadow-search) !important;
+          box-shadow: var(--header-bg-box-shadow-search) !important; }
+
 #documentView {
-  background-image: linear-gradient(180deg, #dfe9f3 0, #fff) !important;
-}
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dfe9f3), to(white)) !important;
+  background-image: linear-gradient(to bottom, #dfe9f3 0%, white 100%) !important;
+  background-image: var(--bg-image) !important;
+  /* font-family: var(--primary-font); */ }
+
 #pageContainer {
   background: none !important;
-  margin-top: 48px !important;
-  margin-top: 3rem !important;
-}
+  margin-top: calc(2 * 1.5rem) !important;
+  margin-top: calc(2 * var(--header-padding)) !important; }
+
 .page {
   border: none !important;
+  border: var(--page-border) !important;
   border-radius: 2px !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
-}
+  border-radius: var(--page-radius) !important;
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24) !important;
+          box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24) !important;
+  -webkit-box-shadow: var(--page-box-shadow) !important;
+          box-shadow: var(--page-box-shadow) !important; }
+
 body::-webkit-scrollbar {
   width: 10px !important;
-  height: 2px !important;
-}
+  height: 2px !important; }
+
 body::-webkit-scrollbar-button {
-  width: 0 !important;
-  height: 0 !important;
-}
+  width: 0px !important;
+  height: 0px !important; }
+
 body::-webkit-scrollbar-thumb {
   background: #e1e1e1 !important;
-  border: 0 none #fff !important;
-}
+  border: 0px none #ffffff !important;
+  /*border-radius: 50px;*/ }
+
 body::-webkit-scrollbar-thumb:hover {
-  background: #fff !important;
-}
+  background: #ffffff !important; }
+
 body::-webkit-scrollbar-thumb:active {
-  background: #000 !important;
-}
+  background: #000000 !important; }
+
 body::-webkit-scrollbar-track {
-  background: #666 !important;
-  border: 0 none #fff !important;
-}
+  background: #666666 !important;
+  border: 0px none #ffffff !important;
+  /*border-radius: 50px;*/ }
+
 body::-webkit-scrollbar-track:hover {
-  background: #666 !important;
-}
+  background: #666666 !important; }
+
 body::-webkit-scrollbar-track:active {
-  background: #fff !important;
-}
+  background: #ffffff !important; }
+
 body::-webkit-scrollbar-corner {
-  background: transparent !important;
-}
+  background: transparent !important; }
+
+/* Tag-based components */
 [title~="@planning"] {
-  font-size: 0.875rem !important;
+  font-size: .875rem !important;
   background-color: #f76707 !important;
   color: #fff !important;
-  padding: 0.025rem 0.25rem 0.075rem !important;
-}
-[title~="@planning"]:hover {
-  background-color: rgba(247, 103, 7, 0.75) !important;
-}
+  color: var(--tag-color) !important;
+  padding: 0.025rem 0.250rem 0.075rem !important;
+  padding: var(--tag-padding) !important; }
+  [title~="@planning"]:hover {
+    background-color: rgba(247, 103, 7, 0.75) !important; }
+
 [title~="@today"] {
-  font-size: 0.875rem !important;
+  font-size: .875rem !important;
   background-color: #f03e3e !important;
   color: #fff !important;
-  padding: 0.025rem 0.25rem 0.075rem !important;
-}
-[title~="@today"]:hover {
-  background-color: rgba(240, 62, 62, 0.75) !important;
-}
+  color: var(--tag-color) !important;
+  padding: 0.025rem 0.250rem 0.075rem !important;
+  padding: var(--tag-padding) !important; }
+  [title~="@today"]:hover {
+    background-color: rgba(240, 62, 62, 0.75) !important; }
+
 [title~="@dump"] {
-  font-size: 0.875rem !important;
+  font-size: .875rem !important;
   background-color: #ae3ec9 !important;
   color: #fff !important;
-  padding: 0.025rem 0.25rem 0.075rem !important;
-}
-[title~="@dump"]:hover {
-  background-color: rgba(174, 62, 201, 0.75) !important;
-}
+  color: var(--tag-color) !important;
+  padding: 0.025rem 0.250rem 0.075rem !important;
+  padding: var(--tag-padding) !important; }
+  [title~="@dump"]:hover {
+    background-color: rgba(174, 62, 201, 0.75) !important; }
+
 [title~="@habits"] {
-  font-size: 0.875rem !important;
+  font-size: .875rem !important;
   background-color: #74b816 !important;
   color: #fff !important;
-  padding: 0.025rem 0.25rem 0.075rem !important;
-}
-[title~="@habits"]:hover {
-  background-color: rgba(116, 184, 22, 0.75) !important;
-}
+  color: var(--tag-color) !important;
+  padding: 0.025rem 0.250rem 0.075rem !important;
+  padding: var(--tag-padding) !important; }
+  [title~="@habits"]:hover {
+    background-color: rgba(116, 184, 22, 0.75) !important; }
+
 [title~="@article"] {
-  font-size: 0.875rem !important;
+  font-size: .875rem !important;
   background-color: #f59f00 !important;
   color: #fff !important;
-  padding: 0.025rem 0.25rem 0.075rem !important;
-}
-[title~="@article"]:hover {
-  background-color: rgba(245, 159, 0, 0.75) !important;
-}
+  color: var(--tag-color) !important;
+  padding: 0.025rem 0.250rem 0.075rem !important;
+  padding: var(--tag-padding) !important; }
+  [title~="@article"]:hover {
+    background-color: rgba(245, 159, 0, 0.75) !important; }
+
 [title~="@send"] {
-  font-size: 0.875rem !important;
+  font-size: .875rem !important;
   background-color: #f76707 !important;
   color: #fff !important;
-  padding: 0.025rem 0.25rem 0.075rem !important;
-}
-[title~="@send"]:hover {
-  background-color: rgba(247, 103, 7, 0.75) !important;
-}
+  color: var(--tag-color) !important;
+  padding: 0.025rem 0.250rem 0.075rem !important;
+  padding: var(--tag-padding) !important; }
+  [title~="@send"]:hover {
+    background-color: rgba(247, 103, 7, 0.75) !important; }
+
 [title~="@note"] {
-  font-size: 0.875rem !important;
+  font-size: .875rem !important;
   background-color: #4263eb !important;
   color: #fff !important;
-  padding: 0.025rem 0.25rem 0.075rem !important;
-}
-[title~="@note"]:hover {
-  background-color: rgba(66, 99, 235, 0.75) !important;
-}
+  color: var(--tag-color) !important;
+  padding: 0.025rem 0.250rem 0.075rem !important;
+  padding: var(--tag-padding) !important; }
+  [title~="@note"]:hover {
+    background-color: rgba(66, 99, 235, 0.75) !important; }
+
 [title~="@projects"] {
-  font-size: 0.875rem !important;
+  font-size: .875rem !important;
   background-color: #1c7ed6 !important;
   color: #fff !important;
-  padding: 0.025rem 0.25rem 0.075rem !important;
-}
-[title~="@projects"]:hover {
-  background-color: rgba(28, 126, 214, 0.75) !important;
-}
+  color: var(--tag-color) !important;
+  padding: 0.025rem 0.250rem 0.075rem !important;
+  padding: var(--tag-padding) !important; }
+  [title~="@projects"]:hover {
+    background-color: rgba(28, 126, 214, 0.75) !important; }
+
 [title~="@log"] {
-  font-size: 0.875rem !important;
+  font-size: .875rem !important;
   background-color: #d6336c !important;
   color: #fff !important;
-  padding: 0.025rem 0.25rem 0.075rem !important;
-}
-[title~="@log"]:hover {
-  background-color: rgba(214, 51, 108, 0.75) !important;
-}
+  color: var(--tag-color) !important;
+  padding: 0.025rem 0.250rem 0.075rem !important;
+  padding: var(--tag-padding) !important; }
+  [title~="@log"]:hover {
+    background-color: rgba(214, 51, 108, 0.75) !important; }
+
 [title*="@pr-"] {
-  font-size: 0.875rem !important;
+  font-size: .875rem !important;
   background-color: #0ca678 !important;
   color: #fff !important;
-  padding: 0.025rem 0.25rem 0.075rem !important;
-}
-[title*="@pr-"]:hover {
-  background-color: rgba(12, 166, 120, 0.75) !important;
-}
+  color: var(--tag-color) !important;
+  padding: 0.025rem 0.250rem 0.075rem !important;
+  padding: var(--tag-padding) !important; }
+  [title*="@pr-"]:hover {
+    background-color: rgba(12, 166, 120, 0.75) !important; }
+
 [title*="@rt-"] {
-  font-size: 0.875rem !important;
+  font-size: .875rem !important;
   background-color: #1098ad !important;
   color: #fff !important;
-  padding: 0.025rem 0.25rem 0.075rem !important;
-}
-[title*="@rt-"]:hover {
-  background-color: rgba(16, 152, 173, 0.75) !important;
-}
+  color: var(--tag-color) !important;
+  padding: 0.025rem 0.250rem 0.075rem !important;
+  padding: var(--tag-padding) !important; }
+  [title*="@rt-"]:hover {
+    background-color: rgba(16, 152, 173, 0.75) !important; }
+
 [title*="@hb-"] {
-  font-size: 0.875rem !important;
+  font-size: .875rem !important;
   background-color: #7048e8 !important;
   color: #fff !important;
-  padding: 0.025rem 0.25rem 0.075rem !important;
-}
-[title*="@hb-"]:hover {
-  background-color: rgba(112, 72, 232, 0.75) !important;
-}
+  color: var(--tag-color) !important;
+  padding: 0.025rem 0.250rem 0.075rem !important;
+  padding: var(--tag-padding) !important; }
+  [title*="@hb-"]:hover {
+    background-color: rgba(112, 72, 232, 0.75) !important; }

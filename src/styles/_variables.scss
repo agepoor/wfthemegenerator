@@ -1,9 +1,14 @@
-@import './../../node_modules/open-color/open-color.css';
 :root {
   /* Theme Colors */
-  --primary-color: #fff;
+  --primary-color: rgba(255, 255, 255,1);
+  --secondary-color: rgba(51, 7, 104, 1);
   /* Header and links */
   --header-padding: 1.5rem;
+  --header-bg-color: var(--secondary-color);
+  --header-bg-color-search: color-mod(var(--header-bg-color) lightness(75%) alpha(25%));
+  --header-bg-box-shadow-color: color-mod(var(--secondary-color) alpha(33%));
+  --header-bg-box-shadow-search: 0px 0px 25px 0px var(--header-bg-box-shadow-color);
+  --header-link-hover: color-mod(var(--primary-color) alpha(50%));
   --header-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   /* Background and page */
   --bg-image: linear-gradient(to bottom, #dfe9f3 0%, white 100%);;
@@ -14,17 +19,4 @@
   /* Tags */
   --tag-color: #fff;
   --tag-padding: 0.025rem 0.250rem 0.075rem;
-  /* Colors */
-  --red: var(--oc-red-7);
-  --pink: var(--oc-pink-7);
-  --grape: var(--oc-grape-7);
-  --violet: var(--oc-violet-7);
-  --indigo: var(--oc-indigo-7);
-  --blue: var(--oc-blue-7);
-  --cyan: var(--oc-cyan-7);
-  --teal: var(--oc-teal-7);
-  --green: var(--oc-green-7);
-  --lime: var(--oc-lime-7);
-  --yellow: var(--oc-yellow-7);
-  --orange: var(--oc-orange-7);
 }

@@ -1,0 +1,10 @@
+#searchForm > input {
+  border: none;
+  background: var(--header-bg-color-search);
+  color: var(--primary-color);
+}
+
+input#searchBox:focus {
+  color: var(--primary-color);
+  box-shadow: var(--header-bg-box-shadow-search);
+}
